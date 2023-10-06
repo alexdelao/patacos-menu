@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: "Quicksand", sans-serif;
+    background: hsl(0 , 0% 95%);
+    background-color: rgb(34, 40, 49);
+}
+.patacos{
+    text-align: center;
+    margin-bottom: 20px;
+ ;
+}
+.patacos img{
+   
+    border-radius: 20%;
+}
+
+.container {
+    align-items: center; /* Alinea el contenido del contenedor al centro */
+}
+.accordion { min-width: 400px; }
+
+.accordion input { display: none;}
+
+.accordion-item {
+    --hue: 205;
+    --title-color: #ffffff;
+    --icon-color: hsl(var(--hue),90%, 40%);
+    --bg: rgba(129, 209, 31, 0.723);
+    /* --bg: hsla(var(--hue),100%, 50%, 0.2); */
+
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.accordion-head {
+    background: #ff6f00;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.06) ;
+}
+.accordion-head:hover{ border-color: var(--icon-color);}
+
+.accordion-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    color:var(--icon-color)
+}
+
+.accordion-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.accordion-body{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.accordion-text{
+    background: var(--bg);
+    border: 1px solid var(--bg);
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 15px 20px;
+    color: rgba(255, 255, 255, 0.913);
+    font-weight: 600;
+}
+
+.item-2 { --hue: 260; }
+.item-3 { --hue: 330; }
+.item-4 { --hue: 100; }
+
+/* :is(#item-1, #item-2, #item-3, #item-4):checked + .accordion-item  .accordion-body{
+    height: 100%;
+} */
+.scale{
+    transition: height 0.3s ease;
+    height: 100%;
+}
+.whatsapp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   color: #ebdddd;
+   
+}
+.whatsapp img{
+    margin-right: 10px;
+}
+.info  {
+    text-align: center;
+    color: #ebdddd;
+
+}
+
+
+
+
+
+
+
+
+
+
